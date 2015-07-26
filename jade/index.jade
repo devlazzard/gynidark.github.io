@@ -1,0 +1,95 @@
+doctype html
+html(lang="en")
+	include partials/header.jade
+	body
+		header
+			section(class='home', id='home')
+				.container
+					h1 Développeur passionné
+					p Visualisez mes projets open-sources
+
+					a(href="#contact", target="_blank") Me contacter
+		section(class='project', id='project')
+			.container
+				h1(class='arrow') Portfolio
+
+				.grid-4
+					.box
+						header
+							a(href="https://github.com/Gynidark/GulpProject", target="_blank") GulpProject
+						footer
+							.link
+								a(href="https://github.com/Gynidark/GulpProject", target="_blank")
+									i(class='fa fa-paper-plane fa-1x')
+
+				.grid-4
+					.box
+						header
+							a(href="https://github.com/BearFramework", target="_blank") BearFramework
+						footer
+							.link
+								a(href="https://github.com/BearFramework", target="_blank")
+									i(class='fa fa-paper-plane fa-1x')
+
+				.grid-4
+					.box
+						header
+							a(href="https://github.com/Dubiumm", target="_blank") Dubiumm
+						footer
+							.link
+								a(href="https://github.com/Dubiumm", target="_blank")
+									i(class='fa fa-paper-plane fa-1x')
+
+
+		section(class='skills', id='skills')
+			.container
+				h1(class='arrow') Compétences
+
+			.container(class='center')
+					.chart(data-percent='80') HTML5
+					.chart(data-percent='80') CSS3
+					.chart(data-percent='70') SASS
+					.chart(data-percent='60') JADE
+					.chart(data-percent='70') PHP
+
+
+		section(class='contact', id='contact')
+			.container
+				h1(class='arrow')  Me contacter
+
+			.container
+				.grid-6
+					.box
+						header
+							i(class='fa fa-facebook')
+							h2 Réseaux sociaux
+						footer
+							.sociaux
+								ul
+									li
+										a(href="#", target="_blank")
+											i(class='fa fa-facebook-official')
+									li
+										a(href="#", target="_blank")
+											i(class='fa fa-twitter')
+									li
+										a(href="#", target="_blank")
+											i(class='fa fa-github-square')
+
+				.grid-6
+					.box
+						header
+							i(class='fa fa-paper-plane fa-1x')
+							h2 Email
+						footer
+							p gynidark@hotmail.com
+
+
+
+		include partials/footer.jade
+
+	script(src='//code.jquery.com/jquery-1.11.3.min.js')
+	script(src='//code.jquery.com/jquery-migrate-1.2.1.min.js')
+	script(src='http://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js')
+
+	script(src='assets/js/app.js')
