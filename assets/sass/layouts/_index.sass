@@ -13,13 +13,17 @@
 		margin-top: 40px
 		.grid-4
 			.box
-				box-shadow: 1px 3px 53px -1px silver
+				border: 1px solid #ccc
 				background-color: #fff
 				margin-bottom: 20px
 				text-align: center
 				margin-left: 30px
 				margin-right: 30px
 				padding: 20px
+				+transition(0.3s)
+				
+				&:hover
+					border: 1px solid #2d7fce
 
 				header
 					a
@@ -57,13 +61,16 @@
 		margin-top: 40px
 		.grid-6
 			.box
-				box-shadow: 1px 3px 53px -1px silver
+				border: 1px solid #ccc
 				background-color: #fff
 				margin-bottom: 20px
 				text-align: center
 				margin-left: 30px
 				margin-right: 30px
 				padding: 20px
+				+transition(0.3s)
+				&:hover
+					border: 1px solid #2d7fce
 
 				header
 					i
